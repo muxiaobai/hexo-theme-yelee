@@ -89,6 +89,20 @@ show_count: false
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
+
+
+gitment:
+  #on: true
+  gitment_GitHub_id: your github username
+  gitment_repo: your github repo
+  gitment_client_id: XXXXX
+  gitment_client_secret: XXXXXXXX
+  # use gitment issue
+  # this comments only use github ,and  push github 'gitment_repo' 
+  # if use gitment this the four params should  have  content.
+  # you can get  gitment_client_id and  gitment_client_secret through https://github.com/settings/applications/new
+  #  
+
 disqus: 
   #on: true
   shortname: 

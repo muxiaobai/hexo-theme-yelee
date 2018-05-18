@@ -63,7 +63,14 @@
 <% } %>
 
 <% if (!index && post.comments){ %>
-    <% if (theme.duoshuo.on) { %>
+
+   <% if (theme.gitment.on) { %>
+      <%- partial('comments/gitment', {
+          key: post.path,
+          title: post.title,
+          url: config.url+url_for(post.path),
+          }) %>
+    <% } else if (theme.duoshuo.on) { %>
       <%- partial('comments/duoshuo', {
           key: post.path,
           title: post.title,
